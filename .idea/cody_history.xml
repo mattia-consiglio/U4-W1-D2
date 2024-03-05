@@ -5,7 +5,11 @@
       <list>
         <chat>
           <accountId value="VXNlcjoxNDY1MTE=" />
-          <internalId value="97469fd7-d0b5-430f-af96-e2efbfeeb9f7" />
+          <internalId value="2d877cf1-6242-4470-9a91-2f9125544eb2" />
+        </chat>
+        <chat>
+          <accountId value="VXNlcjoxNDY1MTE=" />
+          <internalId value="8ce96558-3859-4d83-96a1-59ca72fc50f6" />
         </chat>
       </list>
     </chats>
