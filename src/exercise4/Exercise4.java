@@ -8,9 +8,8 @@ public class Exercise4 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Write a number to display a countdown (should be greater than 0):");
         int number = sc.nextInt();
-        if (number <= 0) {
-            throw new Error("The number should be grater than 0");
-        }
+        if (number > 0) {
+
         System.out.println("Countdown started");
         for (int i = number; i >= 0; i--) {
             if (i != number) {
@@ -21,6 +20,10 @@ public class Exercise4 {
                 }
             }
             System.out.println(i);
+        }
+        }
+        else {
+            System.out.println("The number should be above 0");
         }
         System.out.println("Countdown ended");
         System.out.println("Do you want to restart the program? (Y/N)");

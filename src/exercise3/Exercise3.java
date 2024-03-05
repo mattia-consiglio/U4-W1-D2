@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Exercise3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String string = "";
+        String string;
         do {
             System.out.println("Insert a string: you can exit the program writing \":q\"");
             string = sc.nextLine();
