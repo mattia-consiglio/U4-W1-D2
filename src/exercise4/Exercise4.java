@@ -8,12 +8,12 @@ public class Exercise4 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Write a number to display a countdown (should be greater than 0):");
         int number = sc.nextInt();
-        if (number <=0 ){
+        if (number <= 0) {
             throw new Error("The number should be grater than 0");
         }
         System.out.println("Countdown started");
         for (int i = number; i >= 0; i--) {
-            if (i!= number) {
+            if (i != number) {
                 try {
                     TimeUnit.SECONDS.sleep(1);
                 } catch (InterruptedException ie) {
@@ -25,7 +25,7 @@ public class Exercise4 {
         System.out.println("Countdown ended");
         System.out.println("Do you want to restart the program? (Y/N)");
         String choice = sc.next();
-        if (choice.equalsIgnoreCase("y")){
+        if (choice.equalsIgnoreCase("y")) {
             main(args);
         } else return;
         sc.close();

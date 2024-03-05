@@ -7,31 +7,33 @@ public class Exercise2 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Write an integer number from 0 to 3 included:");
         int number = sc.nextInt();
-        switch (number){
-            case 0 :{
+        switch (number) {
+            case 0: {
                 System.out.println("Zero");
                 break;
-            }case 1 :{
+            }
+            case 1: {
                 System.out.println("One");
                 break;
-            }case 2 :{
+            }
+            case 2: {
                 System.out.println("Two");
                 break;
-            }case 3 :{
+            }
+            case 3: {
                 System.out.println("Three");
                 break;
             }
-            default:{
+            default: {
                 System.out.println("The only valid numbers are 0, 1, 2, 3");
             }
 
         }
         System.out.println("Do you want to restart the program? (Y/N)");
         String choice = sc.next();
-        if (choice.equalsIgnoreCase("y")){
+        if (choice.equalsIgnoreCase("y")) {
             main(args);
-        }
-        else return;
+        } else return;
         sc.close();
     }
 }

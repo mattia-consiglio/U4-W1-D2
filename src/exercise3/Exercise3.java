@@ -16,7 +16,7 @@ public class Exercise3 {
         } while (!Objects.equals(string, ":q"));
         System.out.println("Do you want to restart the program? (Y/N)");
         String choice = sc.next();
-        if (choice.equalsIgnoreCase("y")){
+        if (choice.equalsIgnoreCase("y")) {
             main(args);
         } else return;
         sc.close();
