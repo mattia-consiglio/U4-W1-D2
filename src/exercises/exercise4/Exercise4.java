@@ -1,4 +1,4 @@
-package exercise4;
+package exercises.exercise4;
 
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
@@ -10,19 +10,18 @@ public class Exercise4 {
         int number = sc.nextInt();
         if (number > 0) {
 
-        System.out.println("Countdown started");
-        for (int i = number; i >= 0; i--) {
-            if (i != number) {
-                try {
-                    TimeUnit.SECONDS.sleep(1);
-                } catch (InterruptedException ie) {
-                    Thread.currentThread().interrupt();
+            System.out.println("Countdown started");
+            for (int i = number; i >= 0; i--) {
+                if (i != number) {
+                    try {
+                        TimeUnit.SECONDS.sleep(1);
+                    } catch (InterruptedException ie) {
+                        Thread.currentThread().interrupt();
+                    }
                 }
+                System.out.println(i);
             }
-            System.out.println(i);
-        }
-        }
-        else {
+        } else {
             System.out.println("The number should be above 0");
         }
         System.out.println("Countdown ended");
