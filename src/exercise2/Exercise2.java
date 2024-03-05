@@ -22,9 +22,16 @@ public class Exercise2 {
                 break;
             }
             default:{
-                System.out.println("The only valid number are 0, 1, 2, 3");
+                System.out.println("The only valid numbers are 0, 1, 2, 3");
             }
 
         }
+        System.out.println("Do you want to restart the program? (Y/N)");
+        String choice = sc.next();
+        if (choice.equalsIgnoreCase("y")){
+            main(args);
+        }
+        else return;
+        sc.close();
     }
 }

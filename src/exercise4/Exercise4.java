@@ -23,5 +23,11 @@ public class Exercise4 {
             System.out.println(i);
         }
         System.out.println("Countdown ended");
+        System.out.println("Do you want to restart the program? (Y/N)");
+        String choice = sc.next();
+        if (choice.equalsIgnoreCase("y")){
+            main(args);
+        } else return;
+        sc.close();
     }
 }

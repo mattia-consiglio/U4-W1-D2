@@ -31,14 +31,15 @@ public class Exercise1 {
                 break;
             }
             default: {
-                //start again the program
                 System.out.println("The option selected is not valid");
-                main(args);
-                sc.close();
                 break;
             }
         }
-
+        System.out.println("Do you want to restart the program? (Y/N)");
+        String choice = sc.next();
+        if (choice.equalsIgnoreCase("y")){
+            main(args);
+        } else return;
         sc.close();
     }
 
