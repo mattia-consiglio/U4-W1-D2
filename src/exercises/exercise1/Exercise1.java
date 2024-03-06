@@ -68,7 +68,7 @@ public class Exercise1 {
 
 
             System.out.print("Do you want to restart the program? (Y/N) ");
-            choice = sc.nextLine();
+            choice = sc.next();
         }
 
         sc.close();
